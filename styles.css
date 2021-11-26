@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;900&display=swap");
+body {
+  text-align: center;
+  font-family: "Outfit", sans-serif !important;
+  color: black !important;
+  background-color: black;
+  background-repeat: no-repeat !important;
+  background-position: top left !important;
+}
+
+.cont {
+  max-width: 800px;
+}
+
+#nav {
+  color: white !important;
+  margin: 30px 0;
+}
+#nav h1 {
+  font-weight: 800;
+}
+#nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+#nav ul li {
+  display: inline-block;
+  margin: 0 16px;
+  padding: 10px 0;
+  font-size: 20px;
+}
+#nav ul li:last-child {
+  margin-right: 0;
+}
+#nav ul li a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+#nav ul li a:after {
+  content: "";
+  border-bottom: 1px solid white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  transition: 0.2s;
+}
+#nav ul li a:hover:after {
+  right: 0;
+}
+
+#root {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 30px;
+  padding: 16px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+#clock {
+  opacity: 0.7;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+#town {
+  font-weight: 700;
+  font-size: 26px;
+  vertical-align: middle;
+  padding: 12px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.current-weather * {
+  display: inline-block;
+}
+
+#current-c, #cloud-coverage, #wind-speed {
+  padding: 16px;
+  font-size: 24px;
+  margin: 0 10%;
+}
+
+#forecast {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 8px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+  padding: 16px;
+}
+#forecast .forecast-day {
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+#forecast .forecast-day h2 {
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-weight: 500;
+}
+#forecast .forecast-day img {
+  margin-bottom: 20px;
+}
+#forecast .forecast-day p {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+/*# sourceMappingURL=styles.css.map */
