@@ -23,7 +23,7 @@ function getLocation() {
 let data;
 function setPage(city) {
 let request = new XMLHttpRequest();
-request.open('GET',`http://api.weatherapi.com/v1/forecast.json?key=${api_key}&q=Summerland&days=3`);
+request.open('GET',`http://api.weatherapi.com/v1/forecast.json?key=${api_key}&q=${city}&days=3`);
 request.send();
 request.onload = () => {
         if(request.status === 200) {
