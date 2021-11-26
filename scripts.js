@@ -8,7 +8,7 @@ const clear_bg = 'https://wallpaperaccess.com/full/4130573.jpg';
 const api_key = '941471bf9ff9410ab2264817212511';
 
 function getLocation() {
-    fetch('http://ip-api.com/json')
+    fetch('http://ip-api.com/json/')
     .then(res => res.json())
     .then(response => {
         console.log("Country: " + response.country + ', ' + response.city);
