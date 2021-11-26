@@ -48,6 +48,8 @@ request.onload = () => {
 
             const time_date_text = document.getElementById('town');
             time_date_text.innerHTML = data.location.name + ', ' + data.location.region;
+            time_date_text.classList.add('animate__animated');
+            time_date_text.classList.add('animate__bounceIn');
 
             const current_tempC = document.getElementById('current-c');
             current_tempC.innerHTML = "<i class='bi bi-thermometer-low'></i><br>" + data.current.temp_c + '°C';
@@ -95,6 +97,11 @@ request.onload = () => {
             const cond_text = document.createElement('p');
             cond_text.innerHTML = fd.day.condition.text;
             fd_.append(cond_text);
+
+            fd_.classList.add('animate__animated');
+            fd_.classList.add('animate__fadeIn');
+
+
         }
         function setForecast() {
             const forecastDays = data.forecast.forecastday;
